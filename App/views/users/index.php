@@ -14,7 +14,7 @@
         <tr>
             <td><?= $user['id'] ?></td>
             <td><?= htmlspecialchars($user['name']) ?></td>
-            <td><?= htmlspecialchars($user['email']) ?></td>
+            <td><?= htmlspecialchars($user['Email']) ?></td>
             <td><a href="/users/<?= $user['id'] ?>">View</a></td>
         </tr>
         <?php endforeach; ?>
