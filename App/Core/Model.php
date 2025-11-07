@@ -10,7 +10,7 @@ class Model {
     }
     
     public function all() {
-        $stmt = $this->db->query("SELECT * FROM user");
+        $stmt = $this->db->query("SELECT * FROM {$this->table}");
         return $stmt->fetchAll();
     }
     
