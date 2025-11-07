@@ -1,14 +1,14 @@
 <?php ob_start(); ?>
-<h1>Daftar Users</h1>
+<h1>User List</h1>
 
 <table border="1" cellpadding="10">
     <thead>
         <tr>
             <th>ID</th>
-            <th>Nama</th>
+            <th>Name</th>
             <th>Email</th>
-            <th>Dibuat Pada</th>
-            <th>Aksi</th>
+            <th>Created At</th>
+            <th>Action</th>
         </tr>
     </thead>
     <tbody>
@@ -19,11 +19,11 @@
                     <td><?= htmlspecialchars($user['name'] ?? '') ?></td>
                     <td><?= htmlspecialchars($user['Email'] ?? ($user['email'] ?? '')) ?></td>
                     <td><?= htmlspecialchars($user['created_at'] ?? '') ?></td>
-                    <td><a href="/users/<?= htmlspecialchars($user['id'] ?? '') ?>">Lihat</a></td>
+                    <td><a href="/users/<?= htmlspecialchars($user['id'] ?? '') ?>">View</a></td>
                 </tr>
             <?php endforeach; ?>
         <?php else: ?>
-            <tr><td colspan="5">Belum ada data pengguna.</td></tr>
+            <tr><td colspan="5">No user data available.</td></tr>
         <?php endif; ?>
     </tbody>
 </table>
