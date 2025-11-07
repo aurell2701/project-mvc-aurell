@@ -5,7 +5,7 @@
     <p><strong>ID:</strong> <?= htmlspecialchars($user['id'] ?? '') ?></p>
     <p><strong>Nama:</strong> <?= htmlspecialchars($user['name'] ?? '') ?></p>
     <p><strong>Email:</strong> <?= htmlspecialchars($user['Email'] ?? ($user['email'] ?? '')) ?></p>
-    <p><strong>Dibuat Pada:</strong> <?= htmlspecialchars($user['created_at'] ?? '') ?></p>
+    <p><strong>Created at:</strong> <?= htmlspecialchars($user['created_at'] ?? '') ?></p>
 <?php else: ?>
     <p>Data user tidak ditemukan.</p>
 <?php endif; ?>
